@@ -24,8 +24,7 @@ const app:React.FC = () => {
   )
 }
 export default app;
-
-export function HomeSection() {
+function HomeSection() {
   return (
     <div className='w-xl h-xl bg-black flex flex-col justify-center items-center'>
       <Image src={"/bg.png"} alt='#' height={950} width={1920} className='absolute opacity-10'/>
@@ -49,7 +48,7 @@ export function HomeSection() {
 }
 ;
 
-export function About(){
+function About(){
   return(
     <div className='bg-zinc-950 h-xl w-xl flex justify-center items-center gap-20'>
       <div className='flex flex-col gap-7'>
@@ -84,7 +83,7 @@ export function About(){
 }
 
 
-export function FoodCategory(){
+function FoodCategory(){
   return(
     <div className='flex flex-col h-xxl w-xl bg-zinc-950 items-center gap-28 overflow-hidden'>
       <div className='flex flex-col items-center'>
@@ -151,7 +150,7 @@ export function FoodCategory(){
   )
 }
 
-export function Stats(){
+function Stats(){
   return(
     <div className='w-xl h-l bg-black flex flex-col justify-center '>
         <Image src={"/st_bg.png"} alt='#' height={384} width={1920} className='absolute opacity-15'/> 
@@ -181,7 +180,7 @@ export function Stats(){
   )
 }
 
-export function Menu_chef(){
+function Menu_chef(){
   return(
     <div className='w-xl h-vl bg-zinc-950 flex flex-col items-center gap-44'>
       <div className='flex flex-col items-center gap-10 pt-16'>
