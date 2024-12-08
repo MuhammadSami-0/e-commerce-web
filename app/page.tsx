@@ -10,9 +10,7 @@ import { TbGlassFull } from "react-icons/tb";
 
 
 
-
-
-const app = () => {
+export default function page() {
   return (
     <div>
       <HomeSection />
@@ -23,7 +21,7 @@ const app = () => {
     </div>
   )
 }
-export default app;
+
 
 export function HomeSection() {
   return (
