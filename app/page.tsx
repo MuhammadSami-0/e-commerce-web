@@ -12,7 +12,7 @@ import { TbGlassFull } from "react-icons/tb";
 
 
 
-const app:NextPage = () => {
+const app = () => {
   return (
     <div>
       <Home />
@@ -24,6 +24,7 @@ const app:NextPage = () => {
   )
 }
 export default app;
+
 export function Home() {
   return (
     <div className='w-xl h-xl bg-black flex flex-col justify-center items-center'>
@@ -268,7 +269,7 @@ export function Menu_chef(){
         </div>
       </div>
 
-      <div>
+      <div className='flex flex-col items-center gap-10   '>
         <Image src={"/chefs.png"} alt='#' height={40} width={56} className=''/>  
         <h1 className='text-6xl font-bold text-white'><span className='text-amber-500'>Me</span>et Our Chef</h1>
           <div className='flex gap-4'>
@@ -277,6 +278,7 @@ export function Menu_chef(){
             <Image src={"/ch3.png"} alt='#' height={312} width={391}/>  
             <Image src={"/ch4.png"} alt='#' height={312} width={391}/>  
          </div>
+         <button className='w-48 h-14 flex items-center justify-center bg-zinc-950 border border-amber-500 rounded-3xl text-white'>See More</button>
       </div>
     </div>
   )

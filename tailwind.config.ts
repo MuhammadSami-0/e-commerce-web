@@ -16,7 +16,7 @@ export default {
         xl:"950px",
         xxl:"1400px",
         l:"469px",
-        vl:"1800"
+        vl:"1900px"
       },
       colors: {
         background: "var(--background)",
