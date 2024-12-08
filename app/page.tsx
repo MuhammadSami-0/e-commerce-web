@@ -13,7 +13,7 @@ import { TbGlassFull } from "react-icons/tb";
 export default function page() {
   return (
     <div>
-      <HomeSection />
+      <Section />
       <About />
       <FoodCategory />
       <Stats/>
@@ -23,7 +23,7 @@ export default function page() {
 }
 
 
-export function HomeSection() {
+export function Section() {
   return (
     <div className='w-xl h-xl bg-black flex flex-col justify-center items-center'>
       <Image src={"/bg.png"} alt='#' height={950} width={1920} className='absolute opacity-10'/>
