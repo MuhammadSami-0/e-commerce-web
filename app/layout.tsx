@@ -35,7 +35,7 @@ export default function RootLayout({
       <div className='flex flex-col w-l h-20 items-center gap-6 pt-8 bg-black w-xl'>
         <h1 className='text-white text-2xl font-bold'><span className='text-amber-500'>Food</span>tuck</h1>
         <nav className='flex w-lx justify-between items-center'>
-          <ul className='text-white flex gap-4 text-xl'>
+          <ul className='text-white flex gap-4 text-xl z-10'>
             <li>Home</li>
             <li>Menu</li>
             <li>Blog</li>
@@ -44,7 +44,7 @@ export default function RootLayout({
             <li>Shop</li>
             <li>Contact</li>
           </ul>
-          <div className='flex items-center'>
+          <div className='flex items-center z-10'>
           <input type="text" placeholder='search...' className='border-2 rounded-3xl border-amber-500 bg-black w-80 h-12 pl-9' />
           <div className='relative right-10'><IoIosSearch size={24} color='white' /></div>
           <IoBagOutline size={24} color='white'/>

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        // 'bg-image':"url('/bg.png')"
+      },
       width:{
         xl:"1920px",
         lx:"1320px"

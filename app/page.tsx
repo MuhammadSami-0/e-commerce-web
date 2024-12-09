@@ -26,8 +26,9 @@ const app:React.FC = () => {
 export default app;
 function HomeSection() {
   return (
-    <div className='w-xl h-xl bg-black flex flex-col justify-center items-center'>
-      <Image src={"/bg.png"} alt='#' height={950} width={1920} className='absolute opacity-10'/>
+    <div className="w-xl h-xl bg-[url('/bg.png')] bg-cover bg-center  flex flex-col justify-center items-center">
+      <div className='absolute w-xl h-xl bg-black bg-opacity-75'></div>
+    
 
       <div className='flex justify-center items-center z-10 '>
         <div className='flex flex-col gap-10'>
