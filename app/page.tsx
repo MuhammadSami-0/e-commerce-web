@@ -153,8 +153,9 @@ function FoodCategory(){
 
 function Stats(){
   return(
-    <div className='w-xl h-l bg-black flex flex-col justify-center '>
-        <Image src={"/st_bg.png"} alt='#' height={384} width={1920} className='absolute opacity-15'/> 
+    <div className="w-xl h-l bg-[url('/st_bg.png')] flex flex-col justify-center ">
+      <div className='absolute w-xl h-l bg-black bg-opacity-80'></div>
+    
       <div className='z-10 flex justify-center gap-44'>
         <div className='flex flex-col items-center gap-4'>
           <Image src={"/st1.png"} alt='#' height={120} width={120}/>
