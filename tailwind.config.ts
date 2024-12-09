@@ -13,13 +13,17 @@ export default {
       },
       width:{
         xl:"1920px",
-        lx:"1320px"
+        lx:"1320px",
+        "box":"899px"
+      },
+      spacing:{
+        np:"830px"
       },
       height:{
         xl:"950px",
         xxl:"1400px",
         l:"469px",
-        vl:"1900px"
+        vl:"1750px"
       },
       colors: {
         background: "var(--background)",

@@ -4,9 +4,13 @@ import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 import type { NextPage } from 'next';
 import { FaCheck } from "react-icons/fa6";
-import { PiHamburgerLight } from "react-icons/pi";
+import { PiHamburgerLight, PiQuotesThin } from "react-icons/pi";
 import { PiCookieLight } from "react-icons/pi";
 import { TbGlassFull } from "react-icons/tb";
+import { RiStarFill } from "react-icons/ri";
+import { GoDotFill } from "react-icons/go";
+
+
 
 
 
@@ -20,6 +24,7 @@ const app:React.FC = () => {
       <FoodCategory />
       <Stats/>
       <Menu_chef />
+      <Testimonials/>
     </div>
   )
 }
@@ -281,6 +286,46 @@ function Menu_chef(){
          </div>
          <button className='w-48 h-14 flex items-center justify-center bg-zinc-950 border border-amber-500 rounded-3xl text-white'>See More</button>
       </div>
+    </div>
+  )
+}
+
+function Testimonials(){
+  return(
+    <div className='w-xl h-xl bg-zinc-950 flex flex-col items-center'>/
+
+      <div className='flex flex-col  w-lx h-auto '>
+        <Image src={"/Testimonials.png"} alt='#' height={40} width={128}/>
+        <h1 className='text-6xl font-bold text-white'><span className='text-amber-500'>Wh</span>at Our Clients Are Saying</h1>
+        <div className='w-lx flex flex-col justify-center items-center'>
+        <div className='w-box h-auto pb-10 bg-white flex flex-col items-center mt-44 '>
+          <Image src={"/Tet2.png"} alt='#' height={500} width={395.75} className='absolute right-np'/>
+          <Image src={"/Tet1.png"} alt='#' height={133} width={134} className='relative bottom-20'/>
+          <PiQuotesThin size={25} color='orange' className='relative bottom-10'/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem alias consectetur <br /> voluptas voluptatibus odit nesciunt aliquam quo jiaihd wduhfoi jdoijfb daijofij ijfa9jd wquhhe  <br /> repellendus recusandae? Amet autem voluptatem accusamus voluptatum deserunt maiores <br /> quod tenetur maxime voluptas modi aperiam perspiciatis mollitia  iojasdbbf uiwduon fuhf <br /> eos laudantium, alias provident asperiores?</p>
+          <div className='flex gap-1 pt-5'>
+          <RiStarFill size={24} color='orange'/>
+          <RiStarFill size={24} color='orange'/>
+          <RiStarFill size={24} color='orange'/>
+          <RiStarFill size={24} color='orange'/>
+          <RiStarFill size={24} color='gray'/>
+          </div>
+          <h1 className='text-2xl text-zinc-950 font-bold pt-3'>Alamin Hasan</h1>
+          <p className='text-gray-400 text-xs pt-1'>Food Specialist</p>
+        </div>
+        <div className='flex pt-10'>
+        <GoDotFill size={24} color='orange'/>
+        <GoDotFill size={24} color='gray'/>
+        <GoDotFill size={24} color='gray'/>
+        </div>
+
+      </div>
+        
+
+
+
+      </div>
+      
     </div>
   )
 }
